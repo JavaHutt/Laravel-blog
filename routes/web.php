@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('rest', 'RestTestController')->names('RestTest');
+Route::resource('post', 'Blog\PostController')->names('PostTest');
